@@ -2,96 +2,137 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name = "viewport" content= "width = device-width, initial-scale = 1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>My Profile</title>
+        <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+        <title>Happy Chauke</title>
+        <link rel= stylesheet href="style.css">
     </head>
-    <body id = "home">
+    <body>
         <header>
+            <div class = "container">
+                <div class = "logo">Chauke</div>
                 <nav>
-                    <a href = "#home">Home</a>
-                    <a href = "#about">About me</a>
-                    <a href = "#contact">Contact</a>
+                    <ul>
+                        <li><a href = "#home">Home</a></li>
+                        <li><a href = "#about">About</a></li>
+                         <li><a href = "#interest">Interests</a></li>
+                        <li><a href = "#skill">Skills</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                    </ul>
                 </nav>
-                <h3>Hi, my name is Happy Chauke<br> 
-                Welcome to my personal webpage.</h3>
+            </div>
         </header>
-        <main>
-            <h2>Profile</h2>
-            <section id = "about">
-                 <img src = "media/Profile.jpg" alt = "My Profile picture" width = 60%>
-                 <p>I am fascinated about technology as a whole,<br>
-                    and I see myself developing webpages and maintaining software.<br>
-                    I am continuously learning about coding to better enhance my skills and knowledge through constant learning <br>
-                </p>
-            </section>
-            <hr>
-            <section id = "interest">
-                <h3>Interests</h3>
-                <ul>
-                    <li>&#x1F4AA; Working-out</li>
-                    <li>&#x1F5A5; Learning Code</li>
-                    <li>&#x1F3B5; Listening to Music</li>
-                </ul>
-            </section>
-            <section id="table">
-                <h3>My Life Goals</h3>
-               <table id="goals">
-                    <tr>
-                        <th>Category</th>
-                        <th>Goal</th>
-                        <th>Timeframe</th>
-                    </tr>
-                    <tr>
-                        <td>Career</td>
-                        <td>Becoming a skilled developer</td>
-                        <td>less than 5 years(2025 - 2030)</td>
-                    </tr>   
-                    <tr>
-                        <td>Health & Fitness</td>
-                        <td>Consistent exercise routine</td>
-                        <td>Ongoing</td>
-                    </tr>
-
-                    <tr>
-                        <td>Personal Growth</td>
-                        <td>Enhance my knowledge throw constant learning</td>
-                        <td>Ongoing</td>
-                    </tr>
-                    <tr>
-                        <td>Financial</td>
-                        <td>Save and Invest</td>
-                        <td>5+ years</td>
-                    </tr>
-                </table>
-            </section>
-            <hr>
-            <h3 id = "media_heading">Media Interests</h3>
-            <section id = "media">
-                <img src = "media/image1.jpg" alt = "coding image" width = 70%>
-                <img src = "media/image2.jpg" alt = "HTML structure image" width = 70%>
-                <img src = "media/image4.jpg" alt = "spiderWeb image" width = 70%><br>
+        
+        
+            <div class="profile" id="home">
+                <h1>Hello</h1>
+                <h2>I'm Happy Chauke</h2>
+                <p>Aspiring Web Developer</p>
+                <button onclick="alert('Hello! Welcome to my webpage.')">Say Hello</button>
+                <button onclick="this.innerHTML='Clicked!'">Click Me</button>
+                <img src="media/profile.jpg" alt="Profile Image">
+            </div>
+        
+        
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>I am aspiring web developer and passionate about programming<br>
+                Being part of a dynamic organisation in an IT industry is all I can ask for.</p>
                 
-                <video width = "70%" height = "210" controls>
-                    <source src = "media/vid1.mp4" type = "video/mp4" >
-                    Your browser does not support the video tag.
-                </video>
-                <video width = "70%" height = "210" controls>
-                    <source src = "media/vid2.mp4" type = "video/mp4" >
-                    Your browser does not support the video tag.
-                </video>
-                <video width = "70%" height = "210" controls>
-                    <source src = "media/vid3.mp4" type = "video/mp4" >
-                    Your browser does not support the video tag.
-                </video> 
-            </section>
-             <footer id = "contact">
-                 <ul>
-                     <li>&#x1F4DE;<a href = "tel: +27786992671"> Cell: +27 78 699 2671</a></li>
-                     <li>&#x2709;<a href="mailto:hchauke817@gmail.com"> Email Address</a></li>
-                 </ul>
-                <a href = "https://maps.app.goo.gl/kdTBB7hQdd3xF3VR7" target="_blank" class = "loco"> &#x1F4CD; Location</a>
-            </footer>
-        </main>
+                
+                <h2>My Life Goals</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Goal</th>
+                            <th>Timeframe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Career</td>
+                            <td>Becoming a skilled developer</td>
+                            <td>less than 5 years(2025 - 2030)</td>
+                        </tr>   
+                        <tr>
+                            <td>health & fitness</td>
+                            <td>Consistent exercise routine</td>
+                            <td>Ongoing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Personal Growth</td>
+                            <td>Enhance my knowledge throw constant learning</td>
+                            <td>Ongoing</td>
+                        </tr>
+                        <tr>
+                            <td>Financial</td>
+                            <td>Save and Invest</td>
+                            <td>5+ years</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="interest" id="interest">
+                    <h2>Interests</h2>
+                    <p>During my free time, I enjoy activities that keep me balanced and inspired.</p>
+                    <div class="activity">
+                        <p>&#127947;Working Out</p>
+                    </div>
+                    <div class="activity">
+                        <p>&#128187;Learning Coding</p>
+                    </div>
+                    <div class="activity">
+                        <p>&#x26BD;Playing Soccer</p>
+                    </div>
+                    <div class="activity">
+                        <p>&#127918;Video Games</p>
+                    </div>
+                    <div class="activity">
+                        <p>&#128266;Music</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="skills">
+            <div class="container" id="skill">
+                <h2>My Skills</h2>
+                <p>What does tomorrow have to offer? It's my daily question as I push myself to create a better future.</p>
+                
+                <div class="skill">
+                    <p>HTML5</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:70%;">70%...</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;">65%...</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;">65%...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="interests">
+            
+        </section>
+        
+        <footer>
+            <div class="container" id="contact">
+                <h4>Contact Me:</h4>
+                <p>Email: <a href="mailto:hchauke817@gmail.com">Hchauke817@gmail.com</a></p>
+                <p>Phone: +27 78 699 2671</p>
+            </div>
+        </footer>
     </body>
 </html>

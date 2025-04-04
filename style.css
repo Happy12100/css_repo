@@ -1,108 +1,162 @@
 body {
-    background: linear-gradient(to right, #1a1a1a, #1af);
-    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 header {
-    display: inline-flexbox;
-    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px 0;
 }
-nav a {
-    color: #cfe1f9;
-    font-size: x-large;
-    display: inline-block;
-    padding: 14px 16px;
-    border: outset;
-}
-nav a:hover{
-    background-color: darkcyan;
-}
-header h3{
-    border-block-end-style: groove; 
-}
-#about img{
-    border-radius: 40%;
-    padding-right: 25px;
-    width: 200px;
-}
-#about {
+
+header .container{
     display: flex;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
-#about p {
-    padding-top: 20px;
-    padding-left: 50px;
+
+header .logo{
+    color: firebrick;
+    font-size: 24px;
+    font-weight: bold;
 }
-#interest ul{
-    list-style: circle;
+
+header nav ul{
+    list-style: none;
+    display: flex;
 }
-table{
-    font-family: Cambria, Cochin, Georgia, Times,;
-    border-collapse: collapse;
-    width: 100px;
+
+header nav ul li{
+    margin: 20px;
 }
-table td, table th{
-    border: 1px solid #ddd;
-    padding: 8px;
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
 }
-table tr:nth-child(even){
-    background-color: #1f4f5f;
-}
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: dimgrey;
-    color: #ffffff;
-}
-#media_heading h3{
+
+section{
+    padding: 80px 0;
     text-align: center;
+}
+
+.profile {
+    padding: 50px;
+    background-color: #222;
+}
+
+.profile h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile h2{
+    font-size: 18px;
     margin-bottom: 20px;
-    display:inline-block;
-    padding-bottom: 5px;
 }
 
-#media {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 23px;
-    max-width: 100%;
-    margin: auto;
-} 
-#media img {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 4px 8px #1f1f1f;
-}
-#media img:hover{
-    transform: scale(1.05);
-}
-#media video {
-    width: 100%;
-    max-height: 250px;
-    border-radius: 20px;
-    box-shadow: 4px 8px #1e1e;
-}
-@media (max-width: 768px){
-    #media {
-        grid-template-columns: 1fr;
-    }
-}
-#contact{
-    margin-top: 11px;
-    padding-top: 5px;
-    background-color: #1f1f2f; 
-    
-}
-#contact a{
-    color: #cfe1f9;
-    font-size: medium;
-    display: inline-block;
-    padding: 14px 16px;
+.profile p{
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-#contact ul{
-    display: inline-flex;
-    padding-left: 12px
+.profile h1{
+    display: flex;
+    align-items: flex-end;
+}
+
+.profile button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.profile img{
+    align-content: flex-end;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.about{
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.about p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td{
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #2a2a2a;
+    font-weight: bold;
+}
+
+.interest {
+    margin-top: 20%;
+}
+
+.interest p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills .skill {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.skills p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+
+.skills .progress-bar {
+    background-color: #333;
+    height: 23px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skills .progress {
+    background-color: #007bff;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+footer .container p {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px 0;
 }
